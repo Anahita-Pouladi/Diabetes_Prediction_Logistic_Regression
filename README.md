@@ -28,16 +28,30 @@ interpreting the results.
 
 ------------------------------------------------------------------------
 
-## Problem Statement
+## Project Structure
 
-Diabetes prediction is a binary classification problem where the
-objective is to identify whether a patient is likely to have diabetes
-based on medical-related features.
+``` text
+Diabetes_Prediction_Logistic_Regression/
 
-In healthcare-related machine learning tasks, evaluating a model
-requires more than accuracy alone. Understanding false positives, false
-negatives, recall, and precision is essential when making prediction
-decisions.
+├── data/
+│   └── diabetes.csv
+
+├── docs/
+│   └── Logistic_Regression_Notes.md
+
+├── images/
+│   ├── correlation_matrix.png
+│   ├── roc_curve.png
+│   ├── threshold_optimization.png
+│   └── confusion_matrix.png
+
+├── notebooks/
+│   └── Diabetes_Prediction_Logistic_Regression.ipynb
+
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 ------------------------------------------------------------------------
 
@@ -46,137 +60,29 @@ decisions.
 The dataset contains medical measurements and demographic information
 used to predict diabetes outcomes.
 
-### Target Variable
+Target Variable:
 
-**Outcome**
-
--   0 → No Diabetes
--   1 → Diabetes
-
-------------------------------------------------------------------------
-
-# Project Workflow
-
-## 1. Data Understanding & Validation
-
-Performed:
-
--   Dataset structure review
--   Feature inspection
--   Data quality checks
--   Missing value analysis
--   Duplicate review
--   Initial statistical analysis
+-   Outcome
+    -   0 → No Diabetes
+    -   1 → Diabetes
 
 ------------------------------------------------------------------------
 
-## 2. Exploratory Data Analysis
-
-The following analyses were performed:
-
--   Target distribution analysis
--   Numerical feature distributions
--   Feature relationship analysis
--   Pearson correlation analysis
--   Outlier review
-
-------------------------------------------------------------------------
-
-## 3. Data Preparation
-
-Preparation steps included:
-
--   Separating features and target
--   Train/test split
--   Feature scaling
--   Preparing data for Logistic Regression
-
-------------------------------------------------------------------------
-
-# Modeling
-
-## Baseline Logistic Regression
-
-Logistic Regression was selected as an interpretable baseline
-classification model.
-
-Reasons for selecting this model:
-
--   Provides probability-based predictions
--   Allows feature coefficient interpretation
--   Creates a clear and explainable baseline
-
-------------------------------------------------------------------------
-
-# Model Evaluation
-
-Metrics used:
-
--   Accuracy
--   Precision
--   Recall
--   F1 Score
--   ROC-AUC
--   Confusion Matrix
-
-For medical classification problems, recall is especially important
-because it reflects the model's ability to identify positive cases.
-
-------------------------------------------------------------------------
-
-# Model Improvement
-
-## Hyperparameter Tuning with GridSearchCV
+## Model Improvement
 
 GridSearchCV was applied to evaluate different Logistic Regression
 configurations.
 
-Parameters explored:
+The tuned model was compared with the baseline model. The results showed
+that hyperparameter tuning does not always guarantee better performance.
 
--   Regularization strength (`C`)
--   Penalty type
--   Solver
-
-The tuned model was compared with the baseline model.
-
-### Result
-
-The GridSearchCV model did not outperform the baseline model.
-
-This demonstrates that increasing model complexity or tuning parameters
-does not always guarantee better performance.
+Threshold optimization was also evaluated by testing different
+classification thresholds to improve the strategy for identifying
+positive cases.
 
 ------------------------------------------------------------------------
 
-## Threshold Optimization
-
-Logistic Regression produces probabilities before assigning final class
-labels.
-
-Different classification thresholds were evaluated:
-
--   0.3
--   0.4
--   0.5
--   0.6
-
-### Selected Decision Strategy
-
-A threshold of **0.3** improved the model's ability to identify positive
-diabetes cases.
-
-Compared with the default threshold:
-
--   Recall improved significantly
--   F1 Score improved
--   More positive cases were detected
-
-This improvement came from adjusting the decision strategy rather than
-changing the algorithm.
-
-------------------------------------------------------------------------
-
-# Model Insights
+## Model Insights
 
 ## Correlation Analysis
 
@@ -196,7 +102,7 @@ changing the algorithm.
 
 ------------------------------------------------------------------------
 
-# Future Improvements
+## Future Improvements
 
 Possible future improvements:
 
@@ -211,7 +117,7 @@ Possible future improvements:
 
 ------------------------------------------------------------------------
 
-# Technologies & Libraries
+## Technologies & Libraries
 
 -   Python
 -   Pandas
@@ -222,7 +128,7 @@ Possible future improvements:
 
 ------------------------------------------------------------------------
 
-# What I Learned
+## What I Learned
 
 The main lesson from this project was that improving a machine learning
 model is not only about achieving a higher metric value.
