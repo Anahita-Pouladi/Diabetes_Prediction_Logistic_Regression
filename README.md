@@ -176,6 +176,26 @@ changing the algorithm.
 
 ------------------------------------------------------------------------
 
+# Model Insights
+
+## Correlation Analysis
+
+![Correlation Matrix](images/correlation_matrix.png)
+
+## Threshold Optimization
+
+![Threshold Optimization](images/threshold_optimization.png)
+
+## Final Confusion Matrix
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+## ROC Curve
+
+![ROC Curve](images/roc_curve.png)
+
+------------------------------------------------------------------------
+
 # Future Improvements
 
 Possible future improvements:
