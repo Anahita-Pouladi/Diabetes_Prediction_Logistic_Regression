@@ -1,22 +1,38 @@
-# Diabetes Prediction | Logistic Regression
+# Diabetes Prediction \| Logistic Regression
+
+An end-to-end binary classification workflow covering data analysis,
+Logistic Regression modeling, model evaluation, hyperparameter tuning,
+and threshold optimization.
+
+------------------------------------------------------------------------
 
 ## Project Overview
 
-This project presents an end-to-end binary classification workflow to
-predict diabetes outcomes using Logistic Regression.
+This project develops a classification workflow to predict diabetes
+outcomes using Logistic Regression.
 
-The objective was not only to build a predictive model, but also to
-understand the complete machine learning workflow: data validation,
-exploratory analysis, preprocessing, model evaluation, optimization
-strategies, and decision-making based on model objectives.
+The focus is not only on model performance, but also on understanding
+the dataset, validating data quality, exploring relationships between
+features, preparing the data correctly, evaluating the model, and
+interpreting the results.
+
+------------------------------------------------------------------------
+
+## Key Highlights
+
+-   Interpretable Logistic Regression baseline
+-   Evaluation using Accuracy, Precision, Recall, F1 Score, and ROC-AUC
+-   Hyperparameter tuning with GridSearchCV
+-   Classification threshold optimization
+-   Focus on reproducible and explainable ML workflow
 
 ------------------------------------------------------------------------
 
 ## Problem Statement
 
-Diabetes prediction is a binary classification problem where the goal is
-to identify whether a patient is likely to have diabetes based on
-medical-related features.
+Diabetes prediction is a binary classification problem where the
+objective is to identify whether a patient is likely to have diabetes
+based on medical-related features.
 
 In healthcare-related machine learning tasks, evaluating a model
 requires more than accuracy alone. Understanding false positives, false
@@ -52,9 +68,6 @@ Performed:
 -   Duplicate review
 -   Initial statistical analysis
 
-The purpose was to understand the dataset before applying machine
-learning techniques.
-
 ------------------------------------------------------------------------
 
 ## 2. Exploratory Data Analysis
@@ -66,9 +79,6 @@ The following analyses were performed:
 -   Feature relationship analysis
 -   Pearson correlation analysis
 -   Outlier review
-
-Key observations from EDA were used to guide preprocessing and modeling
-decisions.
 
 ------------------------------------------------------------------------
 
@@ -95,9 +105,6 @@ Reasons for selecting this model:
 -   Provides probability-based predictions
 -   Allows feature coefficient interpretation
 -   Creates a clear and explainable baseline
-
-The baseline model was evaluated using multiple metrics rather than
-accuracy alone.
 
 ------------------------------------------------------------------------
 
@@ -169,59 +176,24 @@ changing the algorithm.
 
 ------------------------------------------------------------------------
 
-# Final Insights
-
-This project demonstrated that improving a machine learning system
-involves more than selecting a more complex model.
-
-Important lessons:
-
--   Understand the data before modeling
--   Select evaluation metrics based on the problem objective
--   Validate improvements using evidence
--   Consider decision thresholds as part of the modeling process
-
-------------------------------------------------------------------------
-
 # Future Improvements
 
 Possible future improvements:
 
-## Algorithm Comparison
-
-Evaluate additional algorithms:
-
--   Random Forest
--   Gradient Boosting
--   XGBoost
--   Support Vector Machines
-
-## Feature Engineering
-
-Potential improvements:
-
--   Creating new meaningful features
--   Feature selection
--   Feature transformation
-
-## Advanced Optimization
-
-Further approaches:
-
--   More extensive hyperparameter tuning
+-   Compare additional algorithms:
+    -   Random Forest
+    -   Gradient Boosting
+    -   XGBoost
+    -   Support Vector Machines
+-   Advanced feature engineering
+-   More extensive hyperparameter optimization
 -   Ensemble modeling
--   Advanced validation strategies
 
 ------------------------------------------------------------------------
 
 # Technologies & Libraries
 
-## Programming Language
-
 -   Python
-
-## Libraries
-
 -   Pandas
 -   NumPy
 -   Matplotlib
