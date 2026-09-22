@@ -28,6 +28,14 @@ interpreting the results.
 
 ------------------------------------------------------------------------
 
+## Kaggle Notebook
+
+The complete notebook is also available on Kaggle:
+
+[View the project on Kaggle](https://www.kaggle.com/code/anahitapouladi/diabetes-prediction-logistic-regression)
+
+------------------------------------------------------------------------
+
 ## Project Structure
 
 ``` text
